@@ -16,6 +16,7 @@ function LineItem({ item, handleCheck, handleDelete }) {
         onClick={() => handleDelete(item.id)}
         role="button"
         tabIndex="0"
+        aria-label={`Delete ${item.item}`}
       />
     </li>
   )
